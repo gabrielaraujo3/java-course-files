@@ -4,9 +4,15 @@ import java.util.Locale;
 
 public class User {
 
-    // PROPRIEDADES (PRIVATE)
+    // PROPRIEDADES CAMPO (OBJETO)
     private String firstName;
     private String lastName;
+
+    // CONSTRUTOR
+    public User(String firstName, String lastName) {
+        this.firstName = firstName.toUpperCase();
+        this.lastName = lastName;
+    }
 
     // SETTER
     public void setFirstName(String firstName) {
@@ -17,11 +23,11 @@ public class User {
         this.lastName = lastName;
     }
 
+    // GETTER
     public String getLastName() {
         return lastName;
     }
 
-    // GETTER
     public String getFirstName() {
         return firstName;
     }
