@@ -6,6 +6,16 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+        User userA = new User("Gabriel", "Araujo");
+        User userB = new User("Gabriel", "Araujo");
+
+        System.out.println(userA);
+        System.out.println(userA.hashCode());
+        System.out.println(userB);
+        System.out.println(userB.hashCode());
+        System.out.println(userA.equals(userB));
+
+        /*
         // String[] => Fixo
         // new ArrayList<String>() => Dinâmicos
         List<String> names = new ArrayList<>();
@@ -20,6 +30,7 @@ public class Main {
         for(String name : names) {
             System.out.println(name);
         }
+         */
 /*
 
 // na classe user formatação do return para a função toString(), retornando aqui o configurado
